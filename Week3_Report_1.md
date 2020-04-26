@@ -1,5 +1,5 @@
 # Configuration Management
-## Week3 Version controlling
+## Week3 Version control
 ### Masih Sheakrak
 
 
@@ -30,4 +30,14 @@ Here I will test more git commands. Lets run a `git log` and try to understand w
 
 ![git log results](/home/masih/git/images/git_List_and_Log.png)
 
-As we see, there are two commits each identified with a SHA key. The first one is the initial commit where we started our repository and second of is when we added the Week3_Report_1.md file. 
+As we see, there are two commits each identified with a SHA key. The first one is the initial commit where we started our repository and second of is when we added the Week3_Report_1.md file.
+
+I now add a new directory to store images for this report and add the above text to the Week3_Report_1 file. I will commit these changes because the process is same as what I reviewed in my blog.  
+
+![](/home/masih/git/images/git_log_and_image_folder_added1.png)
+
+So now one more message is added to our log which shows we added `image` folder and the `git log` text added to this report and saved to Week3_Report_1 file.
+
+## git diff
+
+Next I'll try `git diff` command. So Here I make some further changes to this report file and also add a new image to the folder I just added. After running `git diff`command, all the added text will be shown in green and those removed in color red.  
