@@ -65,11 +65,26 @@ Below I made a new test file and add a "correct parameter" line to it. Then "wro
 
 ![checkout_test_with_diff](/home/masih/git/images/testing_checkout.png)
 
-With `git checkout` command I can undo the changes and restore the changes to the staging area moment. Again running the diff command we see that there are no changes to be made because the wrong parameters are removed.
+With `git checkout` command I can undo the changes and restore the changes to the staging area moment. Again running the `git diff` command we see that there are no changes to be made because the wrong parameters are removed.
 
 ![diff_After_checkout](/home/masih/git/images/git_diff_output_after_checkout_with_cat.png)
 
 One thing to point out here is, after the checkout in the situation above, we can't recover the changes again. Because we never committed those changes.
 
 
-## git reset
+## git reset --hard
+
+The `testFile` I created for git checkout demonstration is still in the staging area.
+
+![before_reset_hard](/home/masih/git/images/before_git_reset_testfile.png)
+
+I can remove all the files in the staging area with `git reset --hard` command. After running the command we can see that the file is not only removed from staging area, but also removed from the working directory. Meaning that if we don't have that file in our history (never committed) that file is gone for ever.
+
+
+# Conclusion
+
+Understanding the three area of Git were very important for me to understand how I can benefit from this service. The three area were:
+
+1- working three
+2- Staging Area (indexing)
+3- History
