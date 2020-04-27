@@ -85,6 +85,8 @@ I can remove all the files in the staging area with `git reset --hard` command. 
 
 Understanding the three area of Git were very important for me to understand how I can benefit from this service. The three area were:
 
-1- working three
-2- Staging Area (indexing)
-3- History
+1. Working Tree
+2. Staging Area (index)
+3. History
+
+With `git init`, we start a repository and activities in that directory will be monitored but changes will not be tracked unless we add them to staging area with `git add command`. And finally to save the state of our progress, we need to run the `git commit` command. 
