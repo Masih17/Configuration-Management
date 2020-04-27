@@ -28,13 +28,13 @@ In my [blog](https://masihsg.wordpress.com/masihs-h3) I explained how I created 
 
 Here I will test more git commands. Lets run a `git log` and try to understand what we have.
 
-![git log results](/home/masih/git/images/git_List_and_Log.png)
+![gitlogresults](images/git_List_and_Log.png)
 
 As we see, there are two commits each identified with a SHA key. The first one is the initial commit where we started our repository and second of is when we added the Week3_Report_1.md file.
 
 I now add a new directory to store images for this report and add the above text to the Week3_Report_1 file. I will commit these changes because the process is same as what I reviewed in my blog.  
 
-![](/home/masih/git/images/git_log_and_image_folder_added1.png)
+![something](/images/git_log_and_image_folder_added1.png)
 
 So now one more message is added to our log which shows we added `image` folder and the `git log` text added to this report and saved to Week3_Report_1 file.
 
@@ -42,32 +42,32 @@ So now one more message is added to our log which shows we added `image` folder 
 
 Next I'll try `git diff` command. So Here I make some further changes to this report file and also add a new image to the folder I just added. After running `git diff`command, all the added text will be shown in green and those changed in color red.  
 
-![git_log](/home/masih/git/images/git-diff.png)
+![gitlog](/images/git-diff.png)
 
 ## git diff --staged
 
 To see the difference between the files in the staging area and the history, `--staged` should be added to git diff command. As it is shown below, the git diff doesn't return anything because there is no difference between the files in the working tree and the staging area.
 
-![git diff](/home/masih/git/images/git_status_and_no_diff.png)
+![gitdiff](/images/git_status_and_no_diff.png)
 
 However when I run git diff --staged, I can see the changes I have made, compared to what exist in the history area. In other words, the command will show us what be committed.   
 
-![git diff staged](/home/masih/git/images/git_diff_staged.png)
+![gitdiffstaged](/images/git_diff_staged.png)
 
 After committing all the changes, now `git diff --staged` also returns nothing because all changes are now saved to the history as well.
 
-![diff](/home/masih/git/images/git_diff_staged_after_commit.png)
+![diff](/images/git_diff_staged_after_commit.png)
 
 
 ## git checkout
 
 Below I made a new test file and add a "correct parameter" line to it. Then "wrong parameter" line was added to the file. Running `git diff` command we see these changes.  
 
-![checkout_test_with_diff](/home/masih/git/images/testing_checkout.png)
+![checkouttestwithdiff](/images/testing_checkout.png)
 
 With `git checkout` command I can undo the changes and restore the changes to the staging area moment. Again running the `git diff` command we see that there are no changes to be made because the wrong parameters are removed.
 
-![diff_After_checkout](/home/masih/git/images/git_diff_output_after_checkout_with_cat.png)
+![diffAftercheckout](/images/git_diff_output_after_checkout_with_cat.png)
 
 One thing to point out here is, after the checkout in the situation above, we can't recover the changes again. Because we never committed those changes.
 
@@ -76,7 +76,7 @@ One thing to point out here is, after the checkout in the situation above, we ca
 
 The `testFile` I created for git checkout demonstration is still in the staging area.
 
-![before_reset_hard](/home/masih/git/images/before_git_reset_testfile.png)
+![beforeresethard](/images/before_git_reset_testfile.png)
 
 I can remove all the files in the staging area with `git reset --hard` command. After running the command we can see that the file is not only removed from staging area, but also removed from the working directory. Meaning that if we don't have that file in our history (never committed) that file is gone for ever.
 
