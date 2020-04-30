@@ -90,3 +90,10 @@ Understanding the three area of Git were very important for me to understand how
 3. History
 
 With `git init`, we start a repository and activities in that directory will be monitored but changes will not be tracked unless we add them to staging area with `git add command`. And finally to save the state of our progress, we need to run the `git commit` command. 
+
+
+References: 
+
+David Mahler [YouTube](https://www.youtube.com/user/mahler711/featured) channel
+Visual Git Reference by Mark Lodato [](https://marklodato.github.io/visual-git-guide/index-en.html)
+
