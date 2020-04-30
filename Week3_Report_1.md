@@ -94,6 +94,9 @@ With `git init`, we start a repository and activities in that directory will be 
 
 References: 
 
-David Mahler [YouTube](https://www.youtube.com/user/mahler711/featured) channel
-Visual Git Reference by Mark Lodato [web page](https://marklodato.github.io/visual-git-guide/index-en.html)
+1. David Mahler [YouTube](https://www.youtube.com/user/mahler711/featured) channel
+
+2. Visual Git Reference by Mark Lodato [web page](https://marklodato.github.io/visual-git-guide/index-en.html)
+
+3. Git [documentation](https://git-scm.com/doc)
 
